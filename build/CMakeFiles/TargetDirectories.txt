@@ -1,0 +1,6 @@
+/home/usuario/Documentos/uni/programming/year2/LandscapeGUI/build/CMakeFiles/rebuild_cache.dir
+/home/usuario/Documentos/uni/programming/year2/LandscapeGUI/build/CMakeFiles/edit_cache.dir
+/home/usuario/Documentos/uni/programming/year2/LandscapeGUI/build/CMakeFiles/LandscapeGUICopyShaders.dir
+/home/usuario/Documentos/uni/programming/year2/LandscapeGUI/build/CMakeFiles/LandscapeGUI.dir
+/home/usuario/Documentos/uni/programming/year2/LandscapeGUI/build/CMakeFiles/LandscapeGUI_autogen_timestamp_deps.dir
+/home/usuario/Documentos/uni/programming/year2/LandscapeGUI/build/CMakeFiles/LandscapeGUI_autogen.dir
