@@ -331,7 +331,7 @@ I decided to repeat vertices to create degenerate triangles that would be skippe
     }
   }// end outer loop
   ```
-  _Code: changes to the building function seen previously. Its from within the outer loop (of i<width-1)_
+  _Code: changes to the building function seen previously. (It is from within the outer loop (of i<width-1))_
   
 ### User Interface
 For this project I wanted the user to be able to at least alter the simple rules and see the result they have on the landscape. Because of this I decided to add a Graphic User Interface. I had very little experience making these but I still wanted to make one that would allow for the user to define the initial landscape as well, granting the power to create a myriad of intriguing terrains. Additionally, I thought that giving the user the ability to chose which iteration of the landscape to view would be a great way of seeing how the cellular automata model works on the environment.
@@ -416,13 +416,13 @@ _Code: when button is pressed it sets the input area to the parameters_
 #### Landscape Rules
 Additionally, I added buttons for each landscape rule, so you could see their individual effect properly.
 
-Landscape Evolution
-Once I realised one could have a slider in a Qt GUI, I knew that having one connected to the iterations being drawn would be the most engaging way of seeing how through simple rules a landscape can develop. I made one from 0-100 and had its value be scaled and then passed along so the corresponding iteration can be build by the buildLand method.
+#### Landscape Evolution
+Once I realised one could have a slider in a Qt GUI, I knew that having one connected to the iterations being drawn would be the most engaging way of seeing how through simple rules a landscape can develop. I made one from 0-100 and had its value be scaled and then passed along so the corresponding iteration can be built by the buildLand method.
 
 ![sliders](images/sliders.jpg)
 _Image: examples of slider being used_ 
 
-Furthermore, I made a button to input the maximum iteration of landscape and linked it to the slider function, so you only draw the iterations till you reach the Maximum Iteration Value. For optimisation purposes, I made this maximum value also be the value my program internally calculates the iterations for. Previously, I was calculating the rules for a large (and hard-coded) number of landscapes at all times but only displaying a small portion of them. This was incredibly suboptimal and by changing it, I ensure the program only calculates the necessary iterations.
+Furthermore, I made a button to input the maximum iteration of landscape and linked it to the slider function, so you only draw the iterations till you reach the Maximum Iteration Value. For optimisation purposes, I made this maximum value also be the value my program internally calculates the iterations for. Previously, I was calculating the rules for a large (and hard-coded) number of landscapes at all times but only displaying a small portion of them. This was incredibly sub-optimal and by changing it, I ensure the program only calculates the necessary iterations.
 
 ```
 void NGLScene::setIterationSlider(int _newSliderValue)
@@ -446,8 +446,8 @@ As you can see the visual design of the GUI developed, but not the core function
 ## Conclusion – Future Developments
 Despite not being the most experienced programmer, I managed to develop a project that matches the original concept rather well. I am pleased to have accomplished that and have a program which allows for intriguing landscape generation. 
 
-I am, however, very aware of many areas that could have been optimised better, from the use of vertex array objects, to the colour palettes. I hope to in the future optimise the project further, and also implement aspects to which I never got to for this assignment, like the normals. 
-Something I would also like to explore further in this project is having rules that are not time invariant and ergodic: I would also like to further explore the rules and initial conditions, perhaps working in reverse and attempting to find the rules that would create a particular type of landscape. I would also like to add multiple scale rules, using course and fine grids, or at least noise.
+I am, however, very aware of many areas that could have been optimised better, from the use of Vertex Array Objects, to the colour palettes. I hope to in the future optimise the project further, and also implement aspects to which I never got to for this assignment, like the normals. 
+Something I would also like to explore further in this project is having rules that are not time invariant and ergodic; I would also like to further explore the rules and initial conditions, perhaps working in reverse and attempting to find the rules that would create a particular type of landscape. I would also like to add multiple scale rules, using course and fine grids, or at least noise.
 In terms of visualisation, I would like to add some lights, textures and perhaps a better more-flexible colouring set-up.
 
 
